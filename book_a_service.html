@@ -47,8 +47,8 @@
           <div class="full">
             <div class="topbar-left">
               <ul class="list-inline">
-                <li> <span class="topbar-label"><i class="fa  fa-phone"></i></span><a href="tel:+91-1234567890" class="smooth" title="" style="color: white;"><span class="topbar-hightlight">+1234567890</span></a> </li>
-                <li> <span class="topbar-label"><i class="fa fa-envelope-o"></i></span> <span class="topbar-hightlight"><a href="mailto:info@yourdomain.com">info@yourdomain.com</a></span> </li>
+                <li> <span class="topbar-label"><i class="fa  fa-phone" style="color: black;"></i></span><a href="tel:+91-1234567890" class="smooth" title=""><span class="topbar-hightlight"><b>+1234567890 </b></span></a> </li>
+                <li> <span class="topbar-label"><i class="fa fa-envelope-o" style="color: black;"></i></span> <span class="topbar-hightlight"><a style="color: black;" href="mailto:info@yourdomain.com"><b>info@yourdomain.com</b></a></span> </li>
               </ul>
             </div>
           </div>
@@ -66,7 +66,7 @@
             </div>
           </div>
           <div class="float-right">
-            <div class="make_appo"> <a class="btn white_btn" href="book_a_service.html">Book a Service</a> </div>
+            <div class="make_appo"> <a class="btn white_btn" href="book_a_service.html"><b>Book a Service</b></a> </div>
           </div>
         </div>
       </div>
@@ -110,6 +110,8 @@
   <!-- header bottom end -->
 </header>
 <!-- end header -->
+<!--Div where the WhatsApp will be rendered-->
+<div style="z-index: 1;" id="WAButton"></div>
 <!--Back to top-->
 <div id="backtop">&#9650;</div>
 <!-- inner page banner -->
@@ -256,5 +258,10 @@
 <script src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
 <script src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
 <script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+<!--Floating WhatsApp css-->
+<link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+<!--Floating WhatsApp javascript-->
+<script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
+<script src="js/float-whatsapp.js"></script>
 </body>
 </html>
