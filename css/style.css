@@ -3173,7 +3173,7 @@ span.skill {
 	-------------------------------------------------------------------*/
 /*Footer style begin*/
 #Footer {
-	padding: 75px 0 50px;
+	padding: 35px 0 30px;
 	background-color: #000;
 }
 #Footer .footer-text p {
@@ -3268,7 +3268,7 @@ span.skill {
 
 footer {
 	background: #632e62;
-	min-height: 375px;
+	/* min-height: 375px; */
 	padding: 45px 0;
 	position: relative;
 }

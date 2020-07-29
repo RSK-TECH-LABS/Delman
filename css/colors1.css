@@ -71,8 +71,8 @@ footer h2::after,
 }
 
 .tp-caption.tp-shape.tp-shapewrapper.tp-resizeme.rs-parallaxlevel-0 {
-	background: #039ee3 !important;
-	opacity: .5 !important;
+	opacity: 1.0 ;
+	background: transparent !important;
 }
 
 a.btn.main_bt,
