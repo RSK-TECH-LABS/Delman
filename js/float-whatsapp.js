@@ -1,7 +1,6 @@
 $(function() {
     $('#WAButton').floatingWhatsApp({
       phone: '1231231231', //WhatsApp Business phone number International format-
-      //Get it with Toky at https://toky.co/en/features/whatsapp.
       headerTitle: 'Chat with us on WhatsApp!', //Popup Title
       popupMessage: 'Hello, how can we help you?', //Popup Message
       showPopup: true, //Enables popup display
