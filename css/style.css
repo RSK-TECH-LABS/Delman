@@ -976,9 +976,7 @@ header .right_bt .btn {
 	padding: 0 35px;
 	font-family: 'Raleway', sans-serif;
 	height: 38px !important;
-}
-
-.book_text{
+	line-height: 35px;
 }
 
 .topbar-left {
