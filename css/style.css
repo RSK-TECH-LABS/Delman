@@ -965,6 +965,10 @@ header .right_bt .btn {
 	position: relative;
 }
 
+.fb_icon{
+	margin-left: 110px;
+}
+
 .make_appo {
 	float: right;
 }
@@ -980,7 +984,7 @@ header .right_bt .btn {
 }
 
 .topbar-left {
-	float: left;
+	float: left;	
 }
 
 .header_top .topbar-left .list-inline {
@@ -1021,6 +1025,10 @@ header .right_bt .btn {
 	font-weight: 600;
 }
 
+.top_contact{
+	font-family: 'Roboto', sans-serif;
+}
+
 #navbar_menu,
 #navbar_menu ul,
 #navbar_menu ul li,
@@ -1035,6 +1043,8 @@ header .right_bt .btn {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	font-family: 'Recursive', sans-serif;
+	font-size: 15px !important;
 }
 
 #navbar_menu ul,
@@ -4948,7 +4958,11 @@ footer ul.social_icons {
         visibility: visible;
         display: block;
         visibility: visible;
-    }
+	}
+	
+	.topbar-left {
+		margin-left: -70px;
+	}
 }
 /* MD */
 @media (min-width: 768px) {
