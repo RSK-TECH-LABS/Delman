@@ -982,6 +982,9 @@ header .right_bt .btn {
 	height: 38px !important;
 	line-height: 35px;
 }
+.book_text{
+	margin-left: 0px;
+}
 
 .topbar-left {
 	float: left;	
@@ -4959,10 +4962,6 @@ footer ul.social_icons {
         display: block;
         visibility: visible;
 	}
-	
-	.topbar-left {
-		margin-left: -70px;
-	}
 }
 /* MD */
 @media (min-width: 768px) {
@@ -4990,7 +4989,7 @@ footer ul.social_icons {
         visibility: visible;
         display: block;
         visibility: visible;
-    }
+	}
 }
 /* LG */
 @media (min-width: 991px) {
@@ -5023,8 +5022,15 @@ footer ul.social_icons {
         visibility: visible;
         display: block;
         visibility: visible;
-    }
+	}
 }
+
+@media (min-width: 1350px) {
+	.topbar-left {
+	margin-left: -70px;
+}
+}
+
 
 .stick {
     position: fixed;
