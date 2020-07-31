@@ -83,8 +83,9 @@
   </div>
   <!-- end header top -->
   <!-- header bottom -->
-  <div class="header_bottom">
-    <div class="container">
+  <div id="mainMenuBarAnchor"></div>
+  <div class="header_bottom" id="mainMenuBar">
+        <div class="container">
       <div class="row">
         <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
           <!-- logo start -->
@@ -240,9 +241,9 @@
       </div>
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-          <div class="copy-right">
+          <!-- <div class="copy-right">
             <p>© Delman Service Centre</p>
-          </div>
+          </div> -->
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-right">
           <div class="social-share">
@@ -256,6 +257,9 @@
       </div>
       <div class="row">
         <div class="col-12">
+          <div class="copy-right">
+            <p>© Delman Service Centre</p>
+          </div>
           <p class="designed">Designed and Developed by <a href="https://rsktechlabs.com/" target="_blank">RSK Tech Labs</a></p>
         </div>
       </div>
@@ -291,5 +295,30 @@
 <!--Floating WhatsApp javascript-->
 <script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
 <script src="js/float-whatsapp.js"></script>
+
+<script>
+  $(document).ready(function() {
+      // Cache selectors for faster performance.
+      var $window = $(window),
+          $mainMenuBar = $('#mainMenuBar'),
+          $mainMenuBarAnchor = $('#mainMenuBarAnchor');
+  
+      // Run this on scroll events.
+      $window.scroll(function() {
+          var window_top = $window.scrollTop();
+          var div_top = $mainMenuBarAnchor.offset().top;
+          if (window_top > div_top) {
+              // Make the div sticky.
+              $mainMenuBar.addClass('stick');
+              $mainMenuBarAnchor.height($mainMenuBar.height());
+          }
+          else {
+              // Unstick the div.
+              $mainMenuBar.removeClass('stick');
+              $mainMenuBarAnchor.height(0);
+          }
+      });
+  });
+  </script>
 </body>
 </html>

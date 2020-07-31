@@ -83,8 +83,9 @@
   </div>
   <!-- end header top -->
   <!-- header bottom -->
-  <div class="header_bottom">
-    <div class="container">
+  <div id="mainMenuBarAnchor"></div>
+  <div class="header_bottom" id="mainMenuBar">  
+        <div class="container">
       <div class="row">
         <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
           <!-- logo start -->
@@ -285,38 +286,41 @@
 <!-- footer -->
 <!-- Footer section starts here -->
 <footer id="Footer">
-  <div class="container text-center">
-    <div class="footer-text ">
-      <div class="row" style="margin-bottom: 25px;">
-        <div style="text-align: center;"class="col-12">
-          <p class="designed" style="font-size: 130%; text-align: center;">For booking a service or any other query <a href="book_a_service.html" style="font-size: 130%;">Contact Us</a></p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-          <div class="copy-right">
-            <p>© Delman Service Centre</p>
+    <div class="container text-center">
+      <div class="footer-text ">
+        <div class="row" style="margin-bottom: 25px;">
+          <div style="text-align: center;"class="col-12">
+            <p class="designed" style="font-size: 130%; text-align: center;">For booking a service or any other query <a href="book_a_service.html" style="font-size: 130%;">Contact Us</a></p>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-right">
-          <div class="social-share">
-            <ul>
-              <li>
-                <a href="https://www.facebook.com/"  target="_blank" style=" height:50px; width:90px; margin-top:0px; display:block; border-radius: 5px;"><img src="images/fblogo.png" height="100%" width="auto" alt="fb" style="border-radius: 25px;"></a>
-              </li>
-            </ul>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <!-- <div class="copy-right">
+              <p>© Delman Service Centre</p>
+            </div> -->
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-right">
+            <div class="social-share">
+              <ul>
+                <li>
+                  <a href="https://www.facebook.com/"  target="_blank" style=" height:50px; width:90px; margin-top:0px; display:block; border-radius: 5px;"><img src="images/fblogo.png" height="100%" width="auto" alt="fb" style="border-radius: 25px;"></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <p class="designed">Designed and Developed by <a href="https://rsktechlabs.com/" target="_blank">RSK Tech Labs</a></p>
+        <div class="row">
+          <div class="col-12">
+            <div class="copy-right">
+              <p>© Delman Service Centre</p>
+            </div>
+            <p class="designed">Designed and Developed by <a href="https://rsktechlabs.com/" target="_blank">RSK Tech Labs</a></p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
-<!-- Footer section ends here -->
+  </footer>
+  <!-- Footer section ends here -->
 <!-- js section -->
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -345,5 +349,30 @@
 <!--Floating WhatsApp javascript-->
 <script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
 <script src="js/float-whatsapp.js"></script>
+
+<script>
+    $(document).ready(function() {
+        // Cache selectors for faster performance.
+        var $window = $(window),
+            $mainMenuBar = $('#mainMenuBar'),
+            $mainMenuBarAnchor = $('#mainMenuBarAnchor');
+    
+        // Run this on scroll events.
+        $window.scroll(function() {
+            var window_top = $window.scrollTop();
+            var div_top = $mainMenuBarAnchor.offset().top;
+            if (window_top > div_top) {
+                // Make the div sticky.
+                $mainMenuBar.addClass('stick');
+                $mainMenuBarAnchor.height($mainMenuBar.height());
+            }
+            else {
+                // Unstick the div.
+                $mainMenuBar.removeClass('stick');
+                $mainMenuBarAnchor.height(0);
+            }
+        });
+    });
+    </script>
 </body>
 </html>
