@@ -113,6 +113,7 @@ website:   	http://www.themepunch.com
 .rev_slider{
 	position:relative;
 	overflow:visible;
+	height: 510px !important;
 }
 
 .tp-overflow-hidden { overflow:hidden;}
