@@ -892,7 +892,8 @@ hr.dottad_border {
 /*----- Header Top -----*/
 
 header {
-	position: relative;
+	
+	height: auto;
 	z-index: 1;
 }
 
@@ -905,11 +906,13 @@ header .right_bt .btn {
 }
 
 .header_top {
-	min-height: 50px;
+	/* min-height: 50px; */
+	/* position: absolute !important; */
 }
 
 .header_bottom {
 	min-height: auto;
+	/* position: absolute !important; */
 }
 
 .header_top ul {
@@ -949,7 +952,7 @@ header .right_bt .btn {
 
 .logo {
 	float: left;
-	margin: 19px 0 19px;
+	/* margin: 19px 0 19px; */
 	position: relative;
 	left: 0;
 }
@@ -972,6 +975,10 @@ header .right_bt .btn {
 	font-weight: 600;
 	padding: 0 35px;
 	font-family: 'Raleway', sans-serif;
+	height: 38px !important;
+}
+
+.book_text{
 }
 
 .topbar-left {
@@ -980,7 +987,8 @@ header .right_bt .btn {
 
 .header_top .topbar-left .list-inline {
 	float: left;
-	margin: 13px 0;
+	/* margin: 13px 0; */
+	margin-left: 0px;
 }
 
 .header_top ul li {
@@ -1053,7 +1061,7 @@ header .right_bt .btn {
 }
 
 #navbar_menu {
-	margin: 37px 0 0 0;
+	margin: 21px 0 0 0;
 	float: left;
 }
 
@@ -3079,6 +3087,7 @@ span.skill {
 .product_img {
 	overflow: hidden;
 	background: #f3f3f3;
+	min-height: 200px;
 }
 
 .product_img img {
@@ -3114,6 +3123,11 @@ span.skill {
 
 .starratin {
 	color: #ffcc00;
+}
+
+.product_detail_btm .center
+{
+	min-height: 70px;
 }
 
 .starratin .fa {
@@ -4998,4 +5012,10 @@ footer ul.social_icons {
         display: block;
         visibility: visible;
     }
+}
+
+.stick {
+    position: fixed;
+	top: 0;
+	background-color: white;
 }
